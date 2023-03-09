@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 176663098}
   - component: {fileID: 176663097}
   m_Layer: 0
-  m_Name: VortexInner
+  m_Name: Vortexoter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1854009580}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &176663097
 ParticleSystemRenderer:
@@ -5300,7 +5300,7 @@ GameObject:
   - component: {fileID: 469463792}
   - component: {fileID: 469463791}
   m_Layer: 0
-  m_Name: trails (1)
+  m_Name: afeter trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5319,7 +5319,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1854009580}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &469463791
 ParticleSystemRenderer:
@@ -15004,7 +15004,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d677e471eeab9cf479d93d28a19b233b, type: 2}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_Name
-      value: fire spin 2
+      value: fire spin 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_IsActive
@@ -15323,7 +15323,7 @@ GameObject:
   - component: {fileID: 1026781032}
   - component: {fileID: 1026781031}
   m_Layer: 0
-  m_Name: fire spin
+  m_Name: fire circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20255,7 +20255,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 04c80c2fa11863d48b903caf950ec67d, type: 2}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_Name
-      value: SingleBlob
+      value: rune ligth
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_RootOrder
@@ -25290,7 +25290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -30380,7 +30380,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1854009580}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &1407192593
 ParticleSystemRenderer:
@@ -35232,7 +35232,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1d479fd85d6b7bf43b43d70814550cea, type: 2}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_Name
-      value: SingleBlob (1)
+      value: rne
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_IsActive
@@ -35240,7 +35240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173558, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -35404,7 +35404,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5772ad80d0c8d684e89b6db294fa9d87, type: 2}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_Name
-      value: SingleBlob
+      value: base ligth
       objectReference: {fileID: 0}
     - target: {fileID: 5896457640404173557, guid: 219fbb669cc7f584f9ce5fd430ac08a4, type: 3}
       propertyPath: m_IsActive
@@ -35556,7 +35556,7 @@ GameObject:
   - component: {fileID: 2061306732}
   - component: {fileID: 2061306731}
   m_Layer: 0
-  m_Name: trails
+  m_Name: pre trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35569,12 +35569,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061306729}
-  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.034000006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1854009580}
+  m_Father: {fileID: 1740157715}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &2061306731
@@ -39600,7 +39600,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minVertexDistance: 0.2
+    minVertexDistance: 0
     textureMode: 0
     ribbonCount: 1
     shadowBias: 0.5
@@ -39622,7 +39622,7 @@ ParticleSystem:
         key0: {r: 1, g: 1, b: 1, a: 0}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 1}
-        key3: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 1}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
@@ -39637,15 +39637,15 @@ ParticleSystem:
         ctime7: 0
         atime0: 771
         atime1: 9252
-        atime2: 48573
-        atime3: 65535
-        atime4: 0
-        atime5: 0
+        atime2: 17540
+        atime3: 32575
+        atime4: 65535
+        atime5: 65535
         atime6: 0
         atime7: 0
         m_Mode: 0
         m_NumColorKeys: 2
-        m_NumAlphaKeys: 4
+        m_NumAlphaKeys: 5
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
