@@ -1,18 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-[Serializable,VolumeComponentMenu("Custom Effects/Color Invert")]
-
-public class colorinvert : VolumeComponent, IPostProcessComponent
+[Serializable, VolumeComponentMenu("Custom Effects/Color Invert")]
+public class ColorInvert : VolumeComponent, IPostProcessComponent
 {
+    public ClampedFloatParameter weight = new ClampedFloatParameter(1, 0, 1, true);
 
-    public ClampedFloatParameter weigth = new ClampedFloatParameter(value:1, min:0, max:1 ,overrideState:true);
+    public bool IsActive() => weight.value > 0;
 
-    public bool IsActive() => weigth.value > 0 ;
- 
-     public bool IsTileCompatible() => false;
+    public bool IsTileCompatible() => false;
 }

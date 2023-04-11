@@ -56,7 +56,7 @@ MonoBehaviour:
   components:
   - {fileID: -8496555260605597938}
   - {fileID: -7770050236907876879}
-  - {fileID: 8265031786959700061}
+  - {fileID: 8719256210641594683}
 --- !u!114 &8265031786959700061
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -73,3 +73,19 @@ MonoBehaviour:
   weigth:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &8719256210641594683
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: ColorInvert
+  m_EditorClassIdentifier: Assembly-CSharp::ColorInvert
+  active: 1
+  weight:
+    m_OverrideState: 1
+    m_Value: 0
