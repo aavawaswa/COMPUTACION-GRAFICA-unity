@@ -3,7 +3,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 [Serializable, VolumeComponentMenu("Custom Effects/Color Invert")]
-public class ColorInvert : VolumeComponent, IPostProcessComponent
+public class Colorinvert : VolumeComponent, IPostProcessComponent
 {
     public ClampedFloatParameter weight = new ClampedFloatParameter(1, 0, 1, true);
 

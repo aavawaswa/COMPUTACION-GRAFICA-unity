@@ -32,7 +32,7 @@ public class ColorInvertFeature : ScriptableRendererFeature
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             VolumeStack volumeStack = VolumeManager.instance.stack;
-            ColorInvert materialSettings = volumeStack.GetComponent<ColorInvert>();
+            Colorinvert materialSettings = volumeStack.GetComponent<Colorinvert>();
             if (materialSettings == null || !materialSettings.active || !materialSettings.IsActive()) return;
             Renderingmaterial.SetFloat("_InvertWeigth",materialSettings.weight.value);
             //Lista de comandos para ejecutar a la hora de renderizar
