@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class ColorInvertFeature : ScriptableRendererFeature
+public class DEpthOfFieldFeature : ScriptableRendererFeature
 {
     class CustomRenderPass : ScriptableRenderPass
     {
@@ -10,13 +10,15 @@ public class ColorInvertFeature : ScriptableRendererFeature
         private RenderTargetHandle screenShotTarget;
         private Material renderingMaterial;
 
+        
+
         private Material Renderingmaterial
         {
             get
             {
                  if (renderingMaterial == null)
                  {
-                    renderingMaterial = new Material(Resources.Load<Shader>("invert colors"));
+                    renderingMaterial = new Material(Resources.Load<Shader>("Blur"));
                  }
                 return renderingMaterial;
             }
@@ -26,15 +28,20 @@ public class ColorInvertFeature : ScriptableRendererFeature
             //Se inicializa el ID
             screenShotTarget.Init("_ColorInvertTexture");
             //Asignamos material del feature
+           this.renderingMaterial = renderingMaterial;
           
         }
 
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
-            VolumeStack volumeStack = VolumeManager.instance.stack;
-            colorinvert materialSettings = volumeStack.GetComponent<colorinvert>();
-            if (materialSettings == null || !materialSettings.active || !materialSettings.IsActive()) return;
-            Renderingmaterial.SetFloat("_InvertWeigth",materialSettings.weight.value);
+            VolumeStack stack = VolumeManager.instance.stack;
+              if (!VolumeManager.instance.IsComponentActiveInMask<DepthOfField>(renderingData.cameraData.camera.cullingMask))
+                return;
+                DepthofField dof = stack.GetComponent<DepthofField>();
+                Renderingmaterial.SetVector("_Pixeloffset",Vector4.one * dof.blurIntensity.value);
+            //colorinvert materialSettings = volumeStack.GetComponent<colorinvert>();
+            //if (materialSettings == null || !materialSettings.active || !materialSettings.IsActive()) return;
+            //Renderingmaterial.SetFloat("_InvertWeigth",materialSettings.weight.value);
             //Lista de comandos para ejecutar a la hora de renderizar
             CommandBuffer cmd = CommandBufferPool.Get("Invert Colors");
             RenderTextureDescriptor screenDescriptor = renderingData.cameraData.cameraTargetDescriptor;
@@ -55,7 +62,7 @@ public class ColorInvertFeature : ScriptableRendererFeature
 
     CustomRenderPass m_ScriptablePass;
     [SerializeField] private RenderPassEvent renderEvent;
-    [SerializeField] private Material renderingMaterial;
+   
 
     /// <inheritdoc/>
     public override void Create()
