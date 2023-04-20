@@ -38,6 +38,19 @@ MonoBehaviour:
     DirectLightingStrength: 0.25
     Radius: 0.035
     SampleCount: 4
+--- !u!114 &-2801045721332199167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb093f67fc523d449f84acde06d3f57, type: 3}
+  m_Name: Depthoffieldfeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +68,9 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -5983482261043939880}
   - {fileID: -3037541270165799599}
-  m_RendererFeatureMap: d8f59fde9566f6ac51bd2df14e7cd8d5
+  - {fileID: 7885274786958739745}
+  - {fileID: -2801045721332199167}
+  m_RendererFeatureMap: d8f59fde9566f6ac51bd2df14e7cd8d521090509a41f6e6d01d15dccc1af20d9
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -92,3 +107,16 @@ MonoBehaviour:
   m_ClusteredRendering: 0
   m_TileSize: 32
   m_IntermediateTextureMode: 1
+--- !u!114 &7885274786958739745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb093f67fc523d449f84acde06d3f57, type: 3}
+  m_Name: Depthoffieldfeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
