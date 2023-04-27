@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8496555260605597938
+--- !u!114 &-6042858681763053305
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,87 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
-  m_Name: MotionBlur
+  m_Script: {fileID: 11500000, guid: 0b9e34bd169b0bf45a3c8aa22aef00ec, type: 3}
+  m_Name: DepthOfField
   m_EditorClassIdentifier: 
   active: 1
-  mode:
-    m_OverrideState: 0
-    m_Value: 0
-  quality:
+  depthStart:
     m_OverrideState: 1
-    m_Value: 2
-  intensity:
+    m_Value: 5
+  depthEnd:
     m_OverrideState: 1
-    m_Value: 1
-  clamp:
-    m_OverrideState: 0
-    m_Value: 0.05
---- !u!114 &-7770050236907876879
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
-  m_Name: Tonemapping
-  m_EditorClassIdentifier: 
-  active: 1
-  mode:
+    m_Value: 45
+  blurIntensity:
     m_OverrideState: 1
-    m_Value: 2
---- !u!114 &-5764486428837920469
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3961f4f000348104f84074089ab159a7, type: 3}
-  m_Name: colorinvert
-  m_EditorClassIdentifier: 
-  active: 1
-  weight:
-    m_OverrideState: 1
-    m_Value: 0
---- !u!114 &-2740262405816853840
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: ColorInvert
-  m_EditorClassIdentifier: Assembly-CSharp::ColorInvert
-  active: 1
-  <displayName>k__BackingField: 
-  weight:
-    m_OverrideState: 1
-    m_Value: 0
---- !u!114 &-1532229395800654123
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3961f4f000348104f84074089ab159a7, type: 3}
-  m_Name: Colorinvert
-  m_EditorClassIdentifier: 
-  active: 1
-  weight:
-    m_OverrideState: 1
-    m_Value: 0
+    m_Value: -6.5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,69 +35,9 @@ MonoBehaviour:
   m_Name: Global Volume Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -8496555260605597938}
-  - {fileID: -7770050236907876879}
-<<<<<<< Updated upstream
-  - {fileID: -5764486428837920469}
-  - {fileID: 3919155480858835569}
---- !u!114 &2657472223117775207
-=======
-  - {fileID: -1532229395800654123}
-  - {fileID: 989191493139197646}
---- !u!114 &989191493139197646
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< Updated upstream
-  m_Script: {fileID: 0}
-  m_Name: Colorinvert
-  m_EditorClassIdentifier: Assembly-CSharp::Colorinvert
-  active: 1
-  <displayName>k__BackingField: 
-  weight:
-    m_OverrideState: 1
-    m_Value: 0
---- !u!114 &3919155480858835569
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6fdf09999237849ac203583790eefa, type: 3}
-  m_Name: DepthofField
-=======
-  m_Script: {fileID: 11500000, guid: 0b9e34bd169b0bf45a3c8aa22aef00ec, type: 3}
-  m_Name: DepthOfField
->>>>>>> Stashed changes
-  m_EditorClassIdentifier: 
-  active: 1
-  depthStart:
-    m_OverrideState: 1
-<<<<<<< Updated upstream
-    m_Value: 0
-=======
-    m_Value: 1
->>>>>>> Stashed changes
-  depthEnd:
-    m_OverrideState: 1
-    m_Value: 10
-  blurIntensity:
-    m_OverrideState: 1
-<<<<<<< Updated upstream
-    m_Value: 25
-=======
-    m_Value: 10
->>>>>>> Stashed changes
---- !u!114 &8265031786959700061
+  - {fileID: 2931260318823000055}
+  - {fileID: -6042858681763053305}
+--- !u!114 &2931260318823000055
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,23 +50,6 @@ MonoBehaviour:
   m_Name: colorinvert
   m_EditorClassIdentifier: 
   active: 1
-  weight:
-    m_OverrideState: 1
-    m_Value: 1
---- !u!114 &8719256210641594683
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: ColorInvert
-  m_EditorClassIdentifier: Assembly-CSharp::ColorInvert
-  active: 1
-  <displayName>k__BackingField: 
   weight:
     m_OverrideState: 1
     m_Value: 0

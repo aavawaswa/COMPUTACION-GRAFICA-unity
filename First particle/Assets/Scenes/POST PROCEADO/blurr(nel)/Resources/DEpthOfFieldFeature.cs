@@ -28,7 +28,7 @@ public class DEpthOfFieldFeature : ScriptableRendererFeature
             //Se inicializa el ID
             screenShotTarget.Init("_ColorInvertTexture");
             //Asignamos material del feature
-           this.renderingMaterial = renderingMaterial;
+          
           
         }
 
